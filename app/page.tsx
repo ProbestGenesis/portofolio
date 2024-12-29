@@ -6,6 +6,7 @@ import AboutMe from "./utils/about";
 import profil from "@/assets/profil.png"
 import { Suspense } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
+import Formation from "./utils/formation";
 
 
 export default function Home() {
@@ -57,6 +58,10 @@ export default function Home() {
 
     <div>
       <AboutMe/>
+    </div>
+
+    <div>
+          <Formation/>
     </div>
   </div>);
 }

@@ -7,7 +7,7 @@ import image1 from "@/assets/numerique.jpeg"
 const AboutMe = () => {
   return (
     <div className='flex flex-col gap-y-7 '>
-        <div className='mb-81'> <h1 className='uppercase text-center text-3xl font-bold'>
+        <div className='mb-8'> <h1 className='uppercase text-center text-3xl font-bold'>
             A propos
         </h1>
         <p className='text-center text-muted'>
