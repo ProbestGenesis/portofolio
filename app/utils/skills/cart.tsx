@@ -52,24 +52,14 @@ export default function Cart() {
                 viewport={{amount: 0.7}}
         >
                <motion.div variants={animate}><Card className=''>
-                    <CardContent>
+                    <CardContent className='h-[300px]'>
                         <CardHeader className='text-center ~text-xs/sm '>
                             Languages
-                        </CardHeader>
+                        </CardHeader> 
                         <CardDescription className='text-center ~text-xs/sm '>
                             Is powerfull of programming
                         </CardDescription>
-                        <ul className='flex flex-col space-y-4'>
-                            <li> 
-                                <span className='flex gap-2 items-center'>
-                                    <span className='flex gap-4 items-center justify-center'>
-                                        <Image src={js} alt="js icon" />
-                                        <Image src={typescript} alt="js icon" />
-                                    </span> 
-                            
-                                    <p>JavaScript - TypeScript</p> 
-                                </span>
-                            </li>
+                        <ul className='flex flex-col space-y-8 my-4'> 
                             <li>
                                 <span className='flex gap-2 items-center'>
                                     <span className='flex gap-4 items-center justify-center'>
@@ -80,7 +70,6 @@ export default function Cart() {
                                 </span>
                                 
                             </li>
-
                             <li> 
                                 <span className='flex gap-2 items-center'>
                                     <span className='flex gap-4 items-center justify-center'>
@@ -169,9 +158,7 @@ export default function Cart() {
                                 <Image src={react} alt='nextjs icon' />react native
                             </li>
 
-                            <li className='flex gap-4 items-center'>
-                                <Image src={redux} alt='redux icon' />Redux
-                            </li>
+                           
                             <li className='flex gap-4 items-center'>
                                 <Image src={electron} width={48} height={48} alt='electron icon' />Electron
                             </li>
@@ -186,7 +173,7 @@ export default function Cart() {
 
         <div className='flex justify-center items-center'>
             <p className='text-center '>
-                Ceci est une liste exhaustive des langages/frameworks que je maîtrise et continue de perfectionner. Bien sûr, dans ma quête de connaissance, j&pos;apprends également d&pos;autres langages, notamment Python et C#, aussi bien pour le développement web que natif.
+                Ceci est une liste exhaustive des langages/frameworks que je maîtrise et continue de perfectionner. Bien sûr, dans ma quête de connaissance, j&pos;apprends également d&pos;autres langages, notamment <strong className='text-accent-foreground'>Python</strong> et <strong className='text-accent-foreground'>C#</strong>, aussi bien pour le développement web que natif.
             </p>
         </div>
     </div>

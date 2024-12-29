@@ -4,13 +4,15 @@ import Cart from "./utils/skills/cart";
 import ProjetModule from "./utils/projet";
 import AboutMe from "./utils/about";
 import profil from "@/assets/profil.png"
+import { Suspense } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 
 export default function Home() {
   return (<div className="flex items-center justify-center flex-col gap-12">
     <div className="flex items-center justify-center flex-col space-y-4">
           <p className="text-primary font-bold ~text-lg/3xl">
-                BEST PROGRAMMING COURSES
+                DEVELOPPEUR WEB FULLSTACK
           </p>
           
 
@@ -26,15 +28,19 @@ export default function Home() {
         <div>
              <span className="flex flex-col space-x-1">
                <h1 className="~text-xl/3xl font-bold uppercase text-nowrap" >dimon oyetounde ange</h1>
-               <p className="~text-xs/sm">Programming is grall</p>
+               <p className="~text-xs/sm">passionné par le monde de la tech et du numérique</p>
               </span> 
         </div>
 
         <div>
 
-          <Profil>
+        <Suspense fallback={<div>
+          <Skeleton className="w-[100px] h-[100px] rounded-full"  />
+        </div>}>
+           <Profil>
             <ProfilImage src={profil.src} alt="profil"/>
           </Profil>
+        </Suspense> 
         </div>
     </div>
 
