@@ -13,7 +13,7 @@ export default function Home() {
   return (<div className="flex items-center justify-center flex-col gap-12">
     <div className="flex items-center justify-center flex-col space-y-4">
           <p className="text-primary font-bold ~text-lg/3xl">
-                DEVELOPPEUR WEB FULLSTACK
+                DEVELOPPEUR FULLSTACK
           </p>
           
 
