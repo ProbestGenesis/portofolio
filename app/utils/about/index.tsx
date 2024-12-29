@@ -3,9 +3,8 @@
 import React from 'react'
 import Image from "next/image"
 import image1 from "@/assets/numerique.jpeg"
-type Props = {}
 
-const AboutMe = (props: Props) => {
+const AboutMe = () => {
   return (
     <div className='flex flex-col gap-y-7 '>
         <div className='mb-81'> <h1 className='uppercase text-center text-3xl font-bold'>

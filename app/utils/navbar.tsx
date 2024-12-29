@@ -1,9 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <div className="flex justify-between items-center mx-4">
         <div className="flex items-center justify-center gap-1">

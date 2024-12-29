@@ -3,8 +3,6 @@
 import { Card, CardContent, CardDescription, CardHeader } from '@/components/ui/card'
 import React from 'react'
 import Image from 'next/image'
-import python from "@/assets/python.png"
-import C from "@/assets/Csharp.png"
 import typescript from "@/assets/typescript.png"
 import js from "@/assets/js.png"
 import next from "@/assets/nextjs.png"
@@ -19,9 +17,7 @@ import sass from "@/assets/sass.png"
 import * as motion from "motion/react-client"
 import type { Variants } from "motion/react"
 
-type Props = {}
-
-export default function Cart({}: Props) {
+export default function Cart() {
 
     const animate : Variants = {
         offscreen: {
@@ -190,7 +186,7 @@ export default function Cart({}: Props) {
 
         <div className='flex justify-center items-center'>
             <p className='text-center '>
-                Ceci est une liste exhaustive des langages/frameworks que je maîtrise et continue de perfectionner. Bien sûr, dans ma quête de connaissance, j'apprends également d'autres langages, notamment Python et C#, aussi bien pour le développement web que natif.
+                Ceci est une liste exhaustive des langages/frameworks que je maîtrise et continue de perfectionner. Bien sûr, dans ma quête de connaissance, j&pos;apprends également d&pos;autres langages, notamment Python et C#, aussi bien pour le développement web que natif.
             </p>
         </div>
     </div>

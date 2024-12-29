@@ -1,7 +1,6 @@
 "use client"
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import { PropsWithChildren } from 'react'
 import {project} from "@/data/project"
 import { Plus, TreeDeciduous } from 'lucide-react'
 import {
@@ -12,8 +11,6 @@ import {
 } from "@/components/ui/tooltip"
 import * as motion from "motion/react-client"
 import type { Variants } from "motion/react"
-
-type Props = {}
 
 type ProjetCardProps = {
   data: {
@@ -47,10 +44,11 @@ const ProjetCard: React.FC<ProjetCardProps> = ({ data }) => {
             <motion.div initial="offscreen" 
                 whileInView="onscreen"
                 viewport={{amount: 0.7}}
+                key={index}
             >
               
            <motion.div variants={animate}>
-            <Card key={index} className="max-w-[600px] 2xl:max-w-[900px]">
+            <Card  className="max-w-[600px] 2xl:max-w-[900px]">
                 <CardContent className='relative'>
                     <CardTitle>
                       <CardHeader>
@@ -90,7 +88,7 @@ const ProjetCard: React.FC<ProjetCardProps> = ({ data }) => {
     </>)
 }
 
-export default function ProjetModule({}: Props) {
+export default function ProjetModule() {
   const animate : Variants = {
     offscreen: {
       opacity: 0,

@@ -1,4 +1,3 @@
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Avatar as Profil, AvatarImage as ProfilImage } from "@/components/ui/profil";
 import { Facebook, Github, Youtube } from "lucide-react";
 import Cart from "./utils/skills/cart";
