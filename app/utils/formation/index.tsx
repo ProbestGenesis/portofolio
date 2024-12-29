@@ -74,7 +74,7 @@ export default function Formation() {
         </Dialog> 
 
         <div className="text-center ">
-          <p>Il est present sur les sreens ci dessus quelques unes des nombreuse formation que j&apos;ai pu suivre, témoins de mes compétences </p>
+          <p>Il est present sur les sreens ci dessus quelques unes des nombreuse formations que j&apos;ai pu suivre, témoins de mes compétences </p>
         </div>
     </div>
   )
