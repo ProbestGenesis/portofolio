@@ -9,7 +9,7 @@ export const project = [{
     "image" : ""
 }, {
     'Name' : "HYPE", 
-    'Description' : "Aucun description disponible",
+    'Description' : "Aucune description disponible",
     'Status' : "Active",
     'StartDate' : "2024-12-01",
     'EndDate' : "",
