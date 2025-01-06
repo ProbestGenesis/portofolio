@@ -11,7 +11,7 @@ const AboutMe = () => {
             A propos
         </h1>
         <p className='text-center text-muted'>
-                Incredible skills
+                Developer mindset
         </p>
         </div>
 
