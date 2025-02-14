@@ -58,13 +58,13 @@ export default function Formation() {
                 <div key={index}>
                    <DialogTrigger>
                      <motion.div className="flex items-center gap-10 w-[300px] h-[200px] relative" variants={animate}>
-                       <Image src={item}  alt='formation scan' fill placeholder="blur" onClick={() => setImage(item)}/>
+                       <Image src={item}  alt='formation scan' fill placeholder="blur" onClick={() => setImage(item)} className="object-cover" />
                       </motion.div> 
                     </DialogTrigger> 
 
                     <DialogContent  className="h-[90%]">
                         <div className="w-full h-full relative">
-                          {img && <Image src={img} fill  alt="scan zoom"  quality={100} placeholder="blur"/>}
+                          {img && <Image src={img} fill  alt="scan zoom"  quality={100} placeholder="blur"  className="object-cover" />}
                         </div>
                     </DialogContent>
                 </div>
