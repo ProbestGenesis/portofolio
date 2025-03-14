@@ -116,7 +116,7 @@ export default function Cart() {
                 <Card>
                     <CardContent className='text-center ~text-xs/sm '>
                         <CardHeader >
-                            Framework    
+                            Library
                         </CardHeader>
 
                         <CardDescription>
